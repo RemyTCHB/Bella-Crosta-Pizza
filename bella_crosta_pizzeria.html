@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Crosta | Authentic Neapolitan Pizza In Obour</title>
+    <meta name="description" content="Authentic Neapolitan Pizza In Obour City. French Passion. Egyptian Heart. Italian Crust.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="Bella Crosta Logo.jpg">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bella Crosta Pizzeria">
+    <meta property="og:description" content="Authentic Neapolitan pizza in Obour City.">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="og:url" content="https://bellacrostapizza.com">
+    <meta property="og:type" content="restaurant">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Archivo:wght@400;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Bella Crosta",
+      "slogan": "French Passion. Egyptian Heart. Italian Crust.",
+      "servesCuisine": ["Pizza", "Neapolitan", "Italian"],
+      "priceRange": "EGP 260–450",
+      "foundingDate": "2025",
+      "url": "https://bellacrostapizza.com",
+      "telephone": "+201031252519",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sky Mall, Al Thaqafa Street, 9th District",
+        "addressLocality": "Obour City",
+        "addressRegion": "Qalyubia",
+        "addressCountry": "EG"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "14:00",
+        "closes": "00:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/bella.crosta.pizza",
+        "https://www.facebook.com/share/1EkTYE13nf/"
+      ],
+      "hasMenu": {
+        "@type": "Menu",
+        "hasMenuItem": [
+          {"@type": "MenuItem", "name": "Marinara", "offers": {"@type": "Offer", "price": "260", "priceCurrency": "EGP"}},
+          {"@type": "MenuItem", "name": "Margherita", "offers": {"@type": "Offer", "price": "290", "priceCurrency": "EGP"}},
+          {"@type": "MenuItem", "name": "Bella", "offers": {"@type": "Offer", "price": "320", "priceCurrency": "EGP"}},
+          {"@type": "MenuItem", "name": "La Rossetta", "offers": {"@type": "Offer", "price": "330", "priceCurrency": "EGP"}},
+          {"@type": "MenuItem", "name": "Beef Bacon", "offers": {"@type": "Offer", "price": "390", "priceCurrency": "EGP"}},
+          {"@type": "MenuItem", "name": "Pastrami", "offers": {"@type": "Offer", "price": "450", "priceCurrency": "EGP"}}
+        ]
+      }
+    }
+    </script>
+
+    <style>
+        /* 
+         * NOTE FOR DEPLOYMENT: 
+         * Extract all CSS from this <style> block into `css/styles.css`.
+         */
+        
+        :root {
+            /* Palette Tokens */
+            --brick: #B02318;
+            --cream: #F7F2E7;
+            --ink: #1C1A17;
+            --ochre: #C8912F;
+            --ash: #8A8175;
+            --wa-green: #25D366; /* WhatsApp Brand Green */
+
+            /* Typography */
+            --font-display-en: 'Libre Baskerville', serif;
+            --font-body-en: 'Source Serif 4', serif;
+            --font-util-en: 'Archivo', sans-serif;
+            
+            --font-display-ar: 'Amiri', serif;
+            --font-body-ar: 'IBM Plex Sans Arabic', sans-serif;
+
+            /* Spacing */
+            --section-spacing: clamp(4rem, 8vw, 8rem);
+            --container-width: 1200px;
+            --container-padding: clamp(1rem, 4vw, 2rem);
+        }
+
+        /* Basic Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--cream);
+            color: var(--ink);
+            font-family: var(--font-body-en);
+            font-size: 1.125rem;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+        }
+
+        /* Subtle Paper Texture */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            opacity: 0.2;
+            pointer-events: none;
+            background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)"/></svg>');
+        }
+
+        /* RTL Adjustments */
+        [lang="ar"] {
+            font-family: var(--font-body-ar);
+            /* Optical sizing for Arabic to match Latin weight */
+            font-size: 1.19rem; /* ~1.06x */
+            line-height: 1.84;  /* ~1.15x */
+        }
+
+        
+        h1, h2, h3, .font-display {
+            font-family: var(--font-display-en);
+            font-weight: 400;
+            color: var(--brick);
+            line-height: 1.1;
+        }
+
+        [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] .font-display {
+            font-family: var(--font-display-ar);
+        }
+
+        /* Capitalize All English Words */
+        [lang="en"] {
+            text-transform: capitalize;
+        }
+
+        .font-util {
+            font-family: var(--font-util-en);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.85rem;
+        }
+
+        [lang="ar"] .font-util {
+            /* Arabic doesn't have uppercase, rely on font weight/size */
+            font-family: var(--font-body-ar);
+            font-weight: 600;
+            letter-spacing: normal;
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin-inline: auto;
+            padding-inline: var(--container-padding);
+        }
+
+        .section-padding {
+            padding-block: var(--section-spacing);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        
+        a:hover {
+            opacity: 0.7;
+        }
+
+        /* Focus outlines for accessibility */
+        :focus-visible {
+            outline: 2px solid var(--brick);
+            outline-offset: 4px;
+        }
+
+        
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--brick);
+            border-radius: 4px; /* Slight rounding for a stamped look */
+            font-family: var(--font-util-en);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        [lang="ar"] .btn {
+            font-family: var(--font-body-ar);
+            font-weight: 600;
+            letter-spacing: normal;
+        }
+
+        .btn-primary {
+            background-color: var(--brick);
+            color: var(--cream);
+        }
+
+        .btn-primary:hover {
+            background-color: #8C1C13; /* Darker brick */
+            border-color: #8C1C13;
+            opacity: 1;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--brick);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--brick);
+            color: var(--cream);
+            opacity: 1;
+        }
+
+        /* WhatsApp Button Variation */
+        .btn-whatsapp {
+            border-color: var(--wa-green) !important;
+            color: var(--wa-green) !important;
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: var(--wa-green) !important;
+            color: #ffffff !important;
+        }
+
+        /* Adjust button contents for icons */
+        .btn {
+            gap: 0.5rem; /* Space between icon and text */
+        }
+        
+        .btn svg {
+            flex-shrink: 0;
+            width: 1.1em;
+            height: 1.1em;
+            fill: currentColor;
+        }
+
+        /* Header */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: rgba(247, 242, 231, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(138, 129, 117, 0.2);
+            transition: padding 0.3s ease;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-block: 1rem;
+        }
+
+        .header-logo-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-seal-img {
+            height: 48px;
+            width: auto;
+            border-radius: 50%;
+            mix-blend-mode: multiply;
+            display: block;
+            transition: transform 0.2s ease;
+        }
+
+        .header-seal-img:hover {
+            transform: scale(1.05);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .lang-toggle {
+            background: none;
+            border: none;
+            font-family: var(--font-util-en);
+            font-size: 0.85rem;
+            color: var(--ash);
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .lang-toggle:hover {
+            color: var(--brick);
+        }
+
+        .header-call {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .header-call {
+                display: inline-flex;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        
+        /* Hero */
+        .hero {
+            position: relative;
+            height: 80vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: var(--ink);
+        }
+
+        .hero-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7; /* Gentle vignette effect via background color */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: var(--cream);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* The Seal Signature Element */
+        .hero-seal {
+            width: clamp(120px, 20vw, 180px);
+            height: auto;
+            margin-bottom: 2rem;
+            /* Slightly off-center */
+            transform: rotate(-5deg) translate(-10px, 10px);
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+            border-radius: 50%; /* Make the JPEG a perfect circle */
+            mix-blend-mode: multiply; /* Helps blend any slight white edge into the background */
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .hero-seal {
+                animation: stamp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+                opacity: 0;
+                transform: scale(1.5) rotate(-5deg) translate(-10px, 10px);
+            }
+        }
+
+        @keyframes stamp {
+            to {
+                opacity: 1;
+                transform: scale(1) rotate(-5deg) translate(-10px, 10px);
+            }
+        }
+
+        .hero-eyebrow {
+            margin-bottom: 1rem;
+            color: var(--ochre);
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 6rem);
+            color: var(--cream);
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero-actions .btn-outline {
+            border-color: var(--cream);
+            color: var(--cream);
+        }
+        
+        .hero-actions .btn-outline:hover {
+            background-color: var(--cream);
+            color: var(--ink);
+        }
+
+        .hero-info-strip {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+            background: linear-gradient(to top, rgba(28,26,23,0.8), transparent);
+            color: var(--cream);
+            font-size: 0.9rem;
+            font-family: var(--font-util-en);
+            letter-spacing: 0.05em;
+        }
+        
+        [lang="ar"] .hero-info-strip {
+            font-family: var(--font-body-ar);
+            letter-spacing: normal;
+        }
+
+        
+        /* Menu Section */
+        .menu-grid {
+            display: grid;
+            gap: 4rem;
+        }
+
+        @media (min-width: 768px) {
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 6rem 4rem;
+            }
+        }
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* Asymmetric Layout - alternating image positions on desktop */
+        @media (min-width: 768px) {
+            .menu-item:nth-child(even) {
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+            }
+        }
+
+        .menu-img-wrap {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            border-radius: 2px;
+        }
+
+        .menu-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Photographic treatment */
+            filter: contrast(1.05) sepia(0.1);
+        }
+
+        /* The Signature Dot-Leader */
+        .menu-header {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-name {
+            font-size: 1.75rem;
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        .menu-leader {
+            flex-grow: 1;
+            border-bottom: 2px dotted var(--ash);
+            opacity: 0.5;
+            position: relative;
+            top: -6px; /* Align with baseline */
+        }
+
+        .menu-price {
+            font-family: var(--font-util-en);
+            font-size: 1.25rem;
+            color: var(--ochre);
+            white-space: nowrap;
+        }
+
+        .menu-desc {
+            color: var(--ash);
+            font-size: 1rem;
+            max-width: 90%;
+        }
+
+        /* Engraved Ornamental Rule */
+        .ornament-rule {
+            display: flex;
+            justify-content: center;
+            margin-block: 4rem;
+        }
+        
+        .ornament-rule svg {
+            width: 120px;
+            height: auto;
+            fill: var(--brick);
+            opacity: 0.8;
+        }
+
+
+        /* Extras Section */
+        .extras-section {
+            background-color: rgba(138, 129, 117, 0.05); /* Very subtle tint */
+        }
+        
+        .extras-container {
+            max-width: 800px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 3rem;
+        }
+
+        .extras-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 600px) {
+            .extras-grid {
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 4rem;
+            }
+        }
+        
+        .extra-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .extra-tier-price {
+            font-family: var(--font-util-en);
+            color: var(--ochre);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(200, 145, 47, 0.3);
+            padding-bottom: 0.25rem;
+        }
+
+        .extra-item {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 0.25rem;
+        }
+        
+        .extra-name {
+            font-family: var(--font-body-en);
+        }
+        
+        [lang="ar"] .extra-name {
+            font-family: var(--font-body-ar);
+        }
+
+        /* Story Section */
+        .story-section {
+            max-width: 800px;
+            margin-inline: auto;
+        }
+
+        .story-block {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        @media (min-width: 600px) {
+            .story-block {
+                grid-template-columns: 80px 1fr;
+                gap: 2rem;
+            }
+        }
+
+        .story-number {
+            font-family: var(--font-display-en);
+            font-size: 4rem;
+            color: var(--brick);
+            line-height: 1;
+            opacity: 0.2;
+            text-align: center;
+        }
+
+        @media (min-width: 600px) {
+            .story-number {
+                text-align: end; /* Uses logical property for RTL */
+            }
+        }
+
+        .story-text {
+            font-size: 1.25rem;
+            color: var(--ink);
+        }
+
+
+        /* Reviews Section (Self-contained module) */
+        .reviews-wrapper {
+            max-width: 1000px;
+            margin-inline: auto;
+            text-align: center;
+        }
+        
+        .reviews-action {
+            margin-top: 2rem;
+        }
+
+        /* Visit Section */
+        .visit-grid {
+            display: grid;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        @media (min-width: 768px) {
+            .visit-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .map-container {
+            width: 100%;
+            aspect-ratio: 4/3;
+            background-color: var(--ash); /* Placeholder color while loading */
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid rgba(138, 129, 117, 0.2);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .visit-info h3 {
+            font-family: var(--font-util-en);
+            font-size: 0.85rem;
+            color: var(--ash);
+            margin-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        [lang="ar"] .visit-info h3 {
+            font-family: var(--font-body-ar);
+            font-weight: 600;
+        }
+
+        .visit-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .contact-number {
+            font-family: var(--font-display-en);
+            font-size: 1.3rem;
+            color: var(--brick);
+            letter-spacing: 0.05em;
+        }
+
+        .contact-actions {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .action-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(176, 35, 24, 0.3);
+            border-radius: 50%;
+            color: var(--brick);
+            transition: all 0.2s ease;
+        }
+
+        .action-icon:hover {
+            background-color: var(--brick);
+            color: var(--cream);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(176, 35, 24, 0.2);
+            border-color: var(--brick);
+        }
+
+        .action-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+        
+        /* Action Icon Color Variations */
+        .action-icon.call-icon {
+            color: var(--ochre);
+            border-color: rgba(200, 145, 47, 0.4);
+        }
+        
+        .action-icon.call-icon:hover {
+            background-color: var(--ochre);
+            border-color: var(--ochre);
+            box-shadow: 0 4px 10px rgba(200, 145, 47, 0.2);
+        }
+
+        .action-icon.wa-icon {
+            color: var(--wa-green);
+            border-color: rgba(37, 211, 102, 0.4);
+        }
+        
+        .action-icon.wa-icon:hover {
+            background-color: var(--wa-green);
+            color: #ffffff;
+            border-color: var(--wa-green);
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+        }
+        
+        .contact-note {
+            font-size: 0.9rem;
+            color: var(--ash);
+            margin-top: 1.5rem;
+            font-style: italic;
+        }
+
+        /* Gallery Section */
+        .gallery-track {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Hide scrollbar Firefox */
+            margin-inline: calc(var(--container-padding) * -1);
+            padding-inline: var(--container-padding);
+            padding-bottom: 1rem;
+        }
+
+        .gallery-track::-webkit-scrollbar {
+            display: none; /* Hide scrollbar Chrome/Safari/Edge */
+        }
+
+        .gallery-item {
+            flex: 0 0 75%; /* Show 75% of image on mobile so the next one peeks in */
+            scroll-snap-align: center;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            border-radius: 4px;
+            background-color: var(--ash);
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            .gallery-item {
+                flex: 0 0 calc(33.333% - 0.67rem); /* 3 images across on desktop */
+                scroll-snap-align: start;
+            }
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease, opacity 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        
+        .gallery-item::after {
+            content: '+';
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--cream);
+            background: rgba(28, 26, 23, 0.4);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        /* Lightbox (Image Modal) */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            background-color: rgba(28, 26, 23, 0.98);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            backdrop-filter: blur(8px);
+        }
+
+        .lightbox.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lightbox-img {
+            max-width: 90vw;
+            max-height: 90vh;
+            object-fit: contain;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .lightbox.active .lightbox-img {
+            transform: scale(1);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem; /* Logical properties mapping */
+            background: none;
+            border: none;
+            color: var(--cream);
+            font-size: 3rem;
+            cursor: pointer;
+            line-height: 1;
+            padding: 1rem;
+            opacity: 0.7;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        
+        [dir="rtl"] .lightbox-close {
+            right: auto;
+            left: 1.5rem;
+        }
+
+        .lightbox-close:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        .site-footer {
+            border-top: 1px solid rgba(138, 129, 117, 0.2);
+            padding-block: 4rem;
+            text-align: center;
+        }
+
+        .footer-seal {
+            width: 80px;
+            height: auto;
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+            border-radius: 50%;
+            mix-blend-mode: multiply;
+        }
+
+        .footer-slogan {
+            font-family: var(--font-util-en);
+            color: var(--brick);
+            margin-bottom: 2rem;
+        }
+        
+        [lang="ar"] .footer-slogan {
+            font-family: var(--font-body-ar);
+            font-weight: 600;
+        }
+
+        .footer-meta {
+            font-size: 0.85rem;
+            color: var(--ash);
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-socials {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .footer-socials a {
+            color: var(--brick);
+            opacity: 0.8;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        .footer-socials a:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .footer-socials svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        /* Mobile Sticky Order Bar */
+        .mobile-order-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--cream);
+            border-top: 1px solid rgba(138, 129, 117, 0.2);
+            padding: 0.75rem;
+            padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            z-index: 100;
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+        }
+
+        @media (min-width: 768px) {
+            .mobile-order-bar {
+                display: none;
+            }
+            body {
+                padding-bottom: 0;
+            }
+        }
+        
+        /* Padding to prevent footer overlap on mobile */
+        @media (max-width: 767px) {
+            body {
+                padding-bottom: 80px;
+            }
+        }
+
+        /* Scroll Animation Classes */
+        @media (prefers-reduced-motion: no-preference) {
+            .fade-up {
+                opacity: 0;
+                transform: translateY(16px);
+                transition: opacity 0.5s ease, transform 0.5s ease;
+            }
+            
+            .fade-up.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="header-logo-link" aria-label="Bella Crosta">
+                <img src="Bella Crosta Logo.jpg" alt="Bella Crosta Logo" class="header-seal-img">
+            </a>
+            <div class="header-actions">
+                <!-- 
+                  NOTE FOR DEPLOYMENT: 
+                  On the English index.html, this should be: 
+                  <a href="/ar/index.html" class="lang-toggle">العربية</a>
+                  On the Arabic ar/index.html, this should be:
+                  <a href="/index.html" class="lang-toggle">English</a>
+                -->
+                <button class="lang-toggle" id="langToggle" data-target="ar">العربية</button>
+                <a href="tel:+201031252519" class="btn btn-outline header-call">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                    <span data-i18n="call">Call to order</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="https://placehold.co/1200x800/1C1A17/F7F2E7?text=Hero+Image+(3:2)" alt="Neapolitan Pizza closeup" class="hero-img" fetchpriority="high">
+            <div class="hero-content">
+                <img src="Bella Crosta Logo.jpg" alt="Bella Crosta Seal" class="hero-seal">
+                
+                <div class="hero-eyebrow font-util" data-i18n="slogan">French Passion. Egyptian Heart. Italian Crust.</div>
+                <h1 class="hero-title">Bella Crosta</h1>
+                
+                <div class="hero-actions">
+                    <a href="tel:+201031252519" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                        <span data-i18n="callBtn">Call to order</span>
+                    </a>
+                    <a href="https://wa.me/201031252519?text=Hi%20Bella%20Crosta%2C%20I'd%20like%20to%20place%20an%20order." class="btn btn-outline whatsapp-link btn-whatsapp">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33 0-65.3-8.9-94-25.7l-6.7-4-69.8 18.3L72 334.1l-4.4-7.1c-18.4-29.6-28.1-64-28.1-99.1 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-2.1-3.6 2.1-3.2 7.6-14.1 1.4-2.8 2.8-5.2 1.4-7.6-1.4-2.4-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                        <span data-i18n="waBtn">WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-info-strip" data-i18n="infoStrip">Obour · Every day 2 PM – midnight · Halal</div>
+        </section>
+
+        <section class="section-padding container" id="menu">
+            <h2 class="section-title fade-up" data-i18n="menuTitle">The Pizzas</h2>
+            <!-- Menu items injected via JS -->
+            <div class="menu-grid" id="pizza-container"></div>
+            
+            <!-- Engraved Rule SVG -->
+            <div class="ornament-rule fade-up">
+                <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 2 C 30 15, 20 15, 0 10 C 20 5, 30 5, 50 18 C 70 5, 80 5, 100 10 C 80 15, 70 15, 50 2 Z"/>
+                    <circle cx="50" cy="10" r="2" />
+                </svg>
+            </div>
+        </section>
+
+        <section class="section-padding extras-section">
+            <div class="container extras-container">
+                <h2 class="section-title fade-up" data-i18n="extrasTitle">Extras</h2>
+                <!-- Extras items injected via JS -->
+                <div class="extras-grid" id="extras-container"></div>
+            </div>
+        </section>
+
+        <section class="section-padding container">
+            <div class="story-section">
+                <!-- Content injected via JS for language support in this preview. 
+                     For deployment, hardcode the HTML for each language page. -->
+                <div id="story-container"></div>
+            </div>
+            
+            <!-- Engraved Rule SVG -->
+            <div class="ornament-rule fade-up">
+                <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 2 C 30 15, 20 15, 0 10 C 20 5, 30 5, 50 18 C 70 5, 80 5, 100 10 C 80 15, 70 15, 50 2 Z"/>
+                    <circle cx="50" cy="10" r="2" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- 
+          Google Reviews Module (Trustindex)
+          To replace with a custom API integration later:
+          1. Keep the <section class="reviews-section"> wrapper.
+          2. Remove the Trustindex script.
+          3. Inject your custom DOM elements inside #reviews-widget-container.
+          4. Ensure your custom markup aligns with the global typography classes.
+        -->
+        <section class="section-padding container reviews-section">
+            <div class="reviews-wrapper">
+                <h2 class="section-title fade-up" data-i18n="reviewsTitle">From our guests</h2>
+                
+                <div id="reviews-widget-container" class="fade-up">
+                    <!-- Trustindex Widget Script -->
+                    <script defer async src='https://cdn.trustindex.io/loader.js?50afd9f78bef07921a0645f118f'></script>
+                </div>
+
+                <div class="reviews-action fade-up">
+                    <a href="https://search.google.com/local/writereview?placeid=ChIJv5jyGQAbWBQRbUA8Rn_IxV8" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="writeReview">Write a review</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding container">
+            <div class="visit-grid">
+                <div class="visit-map fade-up">
+                    <div class="map-container">
+                        <iframe title="Bella Crosta Location Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.419998634591!2d31.45524671511749!3d30.139414281847683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14581100193298bf%3A0x5fc5c87f463c406d!2sBella%20Crosta!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="visit-info fade-up">
+                    <h2 class="section-title" style="text-align: start; margin-bottom: 2rem;" data-i18n="visitTitle">Visit Us</h2>
+                    
+                    <h3 data-i18n="addressLabel">Address</h3>
+                    <p data-i18n="addressVal">Sky Mall, Al Thaqafa Street, 9th District, Obour City, Qalyubia, Egypt</p>
+                    
+                    <h3 data-i18n="hoursLabel">Hours</h3>
+                    <p data-i18n="hoursVal">Every day, 2:00 PM – 12:00 AM (midnight)</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-row">
+                            <span class="contact-number" dir="ltr">+20 103 125 2519</span>
+                            <div class="contact-actions">
+                                <a href="tel:+201031252519" class="action-icon call-icon" aria-label="Call" title="Call">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                </a>
+                                <a href="https://wa.me/201031252519?text=Hi%20Bella%20Crosta%2C%20I'd%20like%20to%20place%20an%20order." class="action-icon whatsapp-link wa-icon" aria-label="WhatsApp" title="WhatsApp">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33 0-65.3-8.9-94-25.7l-6.7-4-69.8 18.3L72 334.1l-4.4-7.1c-18.4-29.6-28.1-64-28.1-99.1 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-2.1-3.6 2.1-3.2 7.6-14.1 1.4-2.8 2.8-5.2 1.4-7.6-1.4-2.4-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <span class="contact-number" dir="ltr">+20 102 927 9167</span>
+                            <div class="contact-actions">
+                                <a href="tel:+201029279167" class="action-icon call-icon" aria-label="Call" title="Call">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="contact-note" data-i18n="orderingNote">Every order is placed by phone call or WhatsApp.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding container">
+            <h2 class="section-title fade-up" data-i18n="galleryTitle">Gallery</h2>
+            <div class="gallery-track" id="gallery-track">
+                <!-- Changed to buttons for accessibility and clickability -->
+                <button class="gallery-item fade-up" style="transition-delay: 0ms;" aria-label="View larger image">
+                    <img src="https://placehold.co/800x800/1C1A17/F7F2E7?text=Atmosphere" alt="Restaurant Atmosphere" loading="lazy">
+                </button>
+                <button class="gallery-item fade-up" style="transition-delay: 100ms;" aria-label="View larger image">
+                    <img src="https://placehold.co/800x800/8A8175/F7F2E7?text=Oven" alt="Pizza Oven" loading="lazy">
+                </button>
+                <button class="gallery-item fade-up" style="transition-delay: 200ms;" aria-label="View larger image">
+                    <img src="https://placehold.co/800x800/B02318/F7F2E7?text=Dough" alt="Pizza Dough" loading="lazy">
+                </button>
+                <button class="gallery-item fade-up" style="transition-delay: 300ms;" aria-label="View larger image">
+                    <img src="https://placehold.co/800x800/C8912F/1C1A17?text=Details" alt="Restaurant Details" loading="lazy">
+                </button>
+                <!-- Added two more placeholders to show off the scrolling feature -->
+                <button class="gallery-item fade-up" style="transition-delay: 400ms;" aria-label="View larger image">
+                    <img src="https://placehold.co/800x800/1C1A17/F7F2E7?text=Ingredients" alt="Fresh Ingredients" loading="lazy">
+                </button>
+                <button class="gallery-item fade-up" style="transition-delay: 500ms;" aria-label="View larger image">
+                    <img src="https://placehold.co/800x800/B02318/F7F2E7?text=The+Team" alt="Our Team" loading="lazy">
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <img src="Bella Crosta Logo.jpg" alt="Bella Crosta Seal" class="footer-seal" loading="lazy">
+            <div class="footer-slogan" data-i18n="slogan">French Passion. Egyptian Heart. Italian Crust.</div>
+            <div class="footer-meta">
+                <span>© 2026 Bella Crosta</span>
+                <span>ESTD 2025</span>
+                <span data-i18n="halalNote">All meat is halal.</span>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/bella.crosta.pizza" target="_blank" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/share/1EkTYE13nf/" target="_blank" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-order-bar">
+        <a href="tel:+201031252519" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+            <span data-i18n="call">Call</span>
+        </a>
+        <a href="https://wa.me/201031252519?text=Hi%20Bella%20Crosta%2C%20I'd%20like%20to%20place%20an%20order." class="btn btn-outline whatsapp-link btn-whatsapp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33 0-65.3-8.9-94-25.7l-6.7-4-69.8 18.3L72 334.1l-4.4-7.1c-18.4-29.6-28.1-64-28.1-99.1 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-2.1-3.6 2.1-3.2 7.6-14.1 1.4-2.8 2.8-5.2 1.4-7.6-1.4-2.4-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+            <span data-i18n="whatsapp">WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image gallery fullscreen view">
+        <button class="lightbox-close" aria-label="Close image">×</button>
+        <img class="lightbox-img" src="" alt="">
+    </div>
+
+    <script>
+        /* 
+         * NOTE FOR DEPLOYMENT: 
+         * Extract the `menuData` into `js/menu.js` and use `export const menu = ...`
+         * Extract the rest of the logic into `js/main.js` and import the menu.
+         */
+
+        const menuData = {
+          pizzas: [
+            {
+              id: "marinara",
+              name: { en: "Marinara", ar: "مارينارا" },
+              price: 260,
+              desc: {
+                en: "Extra Italian tomato sauce, extra Italian basil, garlic, extra virgin olive oil",
+                ar: "صلصة طماطم إيطالي اكسترا، ريحان إيطالي اكسترا، ثوم مع زيت زيتون بكر ممتاز"
+              },
+              image: "https://placehold.co/800x600/C8912F/1C1A17?text=Pizza+Marinara" // "/images/pizza-marinara.jpg"
+            },
+            {
+              id: "margherita",
+              name: { en: "Margherita", ar: "مارغريتا" },
+              price: 290,
+              desc: {
+                en: "Italian tomato sauce, Italian basil, premium Fiori di Latte mozzarella, extra virgin olive oil",
+                ar: "صوص طماطم إيطالي، ريحان إيطالي، موزاريلا فيوري دي لاتّي إيطالي، زيت زيتون بكر ممتاز"
+              },
+              image: "https://placehold.co/800x600/B02318/F7F2E7?text=Pizza+Margherita" // "/images/pizza-margherita.jpg"
+            },
+            {
+              id: "bella",
+              name: { en: "Bella", ar: "بيلا" },
+              price: 320,
+              desc: {
+                en: "Cream sauce, Italian basil, premium Fiori di Latte mozzarella, smoked turkey, extra virgin olive oil",
+                ar: "صوص كريمي، ريحان إيطالي، موزاريلا فيوري دي لاتّي، تركي مدخّن، زيت زيتون بكر ممتاز"
+              },
+              image: "https://placehold.co/800x600/8A8175/F7F2E7?text=Pizza+Bella" // "/images/pizza-bella.jpg"
+            },
+            {
+              id: "la-rossetta",
+              name: { en: "La Rossetta", ar: "لا روسيتّا" },
+              price: 330,
+              desc: {
+                en: "Italian tomato sauce, Italian basil, premium Fiori di Latte mozzarella, parmesan, pepperoni, extra virgin olive oil",
+                ar: "صوص طماطم إيطالي، ريحان إيطالي، موزاريلا فيوري دي لاتّي، بارميزان، بيبروني، زيت زيتون بكر ممتاز"
+              },
+              image: "https://placehold.co/800x600/1C1A17/F7F2E7?text=Pizza+La+Rossetta" // "/images/pizza-la-rossetta.jpg"
+            },
+            {
+              id: "beef-bacon",
+              name: { en: "Beef Bacon", ar: "بيف بيكون" },
+              price: 390,
+              desc: {
+                en: "Italian tomato sauce, Italian basil, premium buffalo mozzarella, beef bacon, extra virgin olive oil",
+                ar: "صلصة طماطم إيطالي، ريحان إيطالي، بافلو موزاريلا، بيف بيكون بريميوم، زيت زيتون بكر ممتاز"
+              },
+              image: "https://placehold.co/800x600/B02318/F7F2E7?text=Pizza+Beef+Bacon" // "/images/pizza-beef-bacon.jpg"
+            },
+            {
+              id: "pastrami",
+              name: { en: "Pastrami", ar: "بسطرمة" },
+              price: 450,
+              desc: {
+                en: "Italian tomato sauce, Italian basil, premium buffalo mozzarella, onion, premium pastrami, extra virgin olive oil, topped with rocket",
+                ar: "صلصة طماطم إيطالي، ريحان إيطالي، موزاريلا بوفالو، بصل، بسطرمة بريميوم، زيت زيتون بكر ممتاز مع بيبي روكا"
+              },
+              image: "https://placehold.co/800x600/C8912F/1C1A17?text=Pizza+Pastrami" // "/images/pizza-pastrami.jpg"
+            }
+          ],
+          extras: [
+            { id: "spicy",       name: { en: "Spicy",       ar: "سبايسي" },    price: 25 },
+            { id: "basil",       name: { en: "Basil",       ar: "ريحان" },     price: 25 },
+            { id: "onion",       name: { en: "Onion",       ar: "بصل" },       price: 25 },
+            { id: "rocket",      name: { en: "Rocket",      ar: "بيبي روكا" }, price: 25 },
+            { id: "sauce",       name: { en: "Sauce",       ar: "صوص" },       price: 30 },
+            { id: "mozzarella",  name: { en: "Mozzarella",  ar: "موزاريلا" },  price: 40 },
+            { id: "pepperoni",   name: { en: "Pepperoni",   ar: "بيبروني" },   price: 40 },
+            { id: "turkey",      name: { en: "Turkey",      ar: "تركي" },      price: 40 },
+            { id: "beef-bacon",  name: { en: "Beef bacon",  ar: "بيف بيكون" }, price: 50 },
+            { id: "pastrami",    name: { en: "Pastrami",    ar: "بسطرمة" },    price: 50 }
+          ]
+        };
+
+        const translations = {
+            en: {
+                call: "Call to order",
+                callBtn: "Call to order",
+                waBtn: "WhatsApp",
+                infoStrip: "Obour · Every day 2 PM – midnight · Halal",
+                slogan: "French Passion. Egyptian Heart. Italian Crust.",
+                menuTitle: "The Pizzas",
+                extrasTitle: "Extras",
+                reviewsTitle: "From our guests",
+                writeReview: "Write a review",
+                visitTitle: "Visit Us",
+                addressLabel: "Address",
+                addressVal: "Sky Mall, Al Thaqafa Street, 9th District, Obour City, Qalyubia, Egypt",
+                hoursLabel: "Hours",
+                hoursVal: "Every day, 2:00 PM – 12:00 AM (midnight)",
+                orderingNote: "Every order is placed by phone call or WhatsApp.",
+                galleryTitle: "Gallery",
+                halalNote: "All meat is halal.",
+                whatsapp: "WhatsApp",
+                waText: "Hi Bella Crosta, I'd like to place an order.",
+                story: [
+                    "Bella Crosta began with a coincidence. He was Egyptian, she was French, and they met on Umrah — two strangers from two countries in the same crowd.",
+                    "Years later, married, they decided to learn to make real Neapolitan pizza. Not an approximation of it. It took six months of dough, heat, and failure before they were willing to serve it to anyone.",
+                    "In 2025 they started from a kitchen with no dining room. Today there's a room in Obour, and the same two people still check every pizza that leaves the oven."
+                ]
+            },
+            ar: {
+                call: "اتصل للطلب",
+                callBtn: "اتصل للطلب",
+                waBtn: "واتساب",
+                infoStrip: "العبور · يومياً من ٢ مساءً إلى منتصف الليل · حلال",
+                slogan: "شغف فرنسي. قلب مصري. أصل إيطالي.",
+                menuTitle: "البيتزا",
+                extrasTitle: "إضافات",
+                reviewsTitle: "من ضيوفنا",
+                writeReview: "اكتب تقييمًا",
+                visitTitle: "زورونا",
+                addressLabel: "العنوان",
+                addressVal: "سكاي مول، شارع الثقافة، الحي التاسع، العبور",
+                hoursLabel: "ساعات العمل",
+                hoursVal: "يومياً، ٢:٠٠ مساءً – ١٢:٠٠ منتصف الليل",
+                orderingNote: "يتم استقبال جميع الطلبات عبر الاتصال الهاتفي أو واتساب.",
+                galleryTitle: "المعرض",
+                halalNote: "جميع اللحوم حلال.",
+                whatsapp: "واتساب",
+                waText: "مرحبًا بيلا كروستا، أريد أن أطلب.",
+                story: [
+                    "بدأت بيلا كروستا بمحض مصادفة. هو مصري، وهي فرنسية، وقد التقيا في العمرة — غريبان من بلدين في الزحام نفسه.",
+                    "وبعد سنوات، وقد صارا زوجين، قرّرا أن يتعلّما صناعة البيتزا النابولية الحقيقية. لا شيئًا يشبهها. استغرق الأمر ستة أشهر من العجين والنار والمحاولات الفاشلة قبل أن يرضيا بتقديمها لأحد.",
+                    "في عام ٢٠٢٥ انطلقا من مطبخ بلا صالة طعام. واليوم هناك مكان في العبور، وما زال الشخصان نفسهما يتفقّدان كل بيتزا تخرج من الفرن."
+                ]
+            }
+        };
+
+        // State
+        let currentLang = 'en';
+
+
+        function renderPizzas(lang) {
+            const container = document.getElementById('pizza-container');
+            container.innerHTML = '';
+            
+            menuData.pizzas.forEach((pizza, index) => {
+                const item = document.createElement('div');
+                item.className = 'menu-item fade-up';
+                item.style.transitionDelay = `${index * 60}ms`;
+                
+                item.innerHTML = `
+                    <div class="menu-img-wrap">
+                        <img src="${pizza.image}" alt="${pizza.name[lang]}" width="800" height="600" class="menu-img" loading="lazy" decoding="async" style="aspect-ratio: 4/3;">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">${pizza.name[lang]}</h3>
+                            <div class="menu-leader"></div>
+                            <div class="menu-price"><span dir="ltr">${pizza.price}</span> EGP</div>
+                        </div>
+                        <p class="menu-desc">${pizza.desc[lang]}</p>
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        function renderExtras(lang) {
+            const container = document.getElementById('extras-container');
+            container.innerHTML = '';
+            
+            // Group by price
+            const grouped = menuData.extras.reduce((acc, extra) => {
+                if (!acc[extra.price]) acc[extra.price] = [];
+                acc[extra.price].push(extra);
+                return acc;
+            }, {});
+            
+            Object.keys(grouped).sort((a,b) => a - b).forEach((price, index) => {
+                const groupDiv = document.createElement('div');
+                groupDiv.className = 'extra-group fade-up';
+                groupDiv.style.transitionDelay = `${index * 60}ms`;
+                
+                let itemsHtml = grouped[price].map(item => `
+                    <div class="extra-item">
+                        <span class="extra-name">${item.name[lang]}</span>
+                    </div>
+                `).join('');
+
+                groupDiv.innerHTML = `
+                    <div class="extra-tier-price">+<span dir="ltr">${price}</span> EGP</div>
+                    ${itemsHtml}
+                `;
+                container.appendChild(groupDiv);
+            });
+        }
+
+        function renderStory(lang) {
+            const container = document.getElementById('story-container');
+            container.innerHTML = '';
+            
+            translations[lang].story.forEach((paragraph, index) => {
+                const block = document.createElement('div');
+                block.className = 'story-block fade-up';
+                
+                // Format numbers to Western Arabic or Eastern Arabic numerals based on language preference.
+                // The brief requested Western Arabic for prices, but usually list numbers are translated.
+                // Keeping it as 1, 2, 3 for structural clarity as Bodoni is specified for numbers.
+                block.innerHTML = `
+                    <div class="story-number font-display">0${index + 1}</div>
+                    <div class="story-text">${paragraph}</div>
+                `;
+                container.appendChild(block);
+            });
+        }
+
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            
+            // Update static texts
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update WhatsApp Links
+            const waTextEncoded = encodeURIComponent(translations[lang].waText);
+            document.querySelectorAll('.whatsapp-link').forEach(link => {
+                link.href = `https://wa.me/201031252519?text=${waTextEncoded}`;
+            });
+
+            // Update Toggle Button Text
+            const toggleBtn = document.getElementById('langToggle');
+            if (lang === 'en') {
+                toggleBtn.textContent = 'العربية';
+                toggleBtn.dataset.target = 'ar';
+            } else {
+                toggleBtn.textContent = 'English';
+                toggleBtn.dataset.target = 'en';
+            }
+
+            // Re-render dynamic content
+            renderPizzas(lang);
+            renderExtras(lang);
+            renderStory(lang);
+            
+            // Re-initialize intersection observer for new elements
+            initScrollAnimations();
+        }
+
+        // Language Toggle Event
+        document.getElementById('langToggle').addEventListener('click', (e) => {
+            const targetLang = e.target.dataset.target;
+            setLanguage(targetLang);
+        });
+
+        // Scroll Animations
+        function initScrollAnimations() {
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (prefersReducedMotion) return;
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Run once
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-up').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.site-header');
+            if (window.scrollY > 50) {
+                header.style.paddingBlock = '0.5rem';
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
+            } else {
+                header.style.paddingBlock = '1rem';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Lightbox Logic
+        function initLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = lightbox.querySelector('.lightbox-img');
+            const lightboxClose = lightbox.querySelector('.lightbox-close');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            const openLightbox = (imgSrc, imgAlt) => {
+                lightboxImg.src = imgSrc;
+                lightboxImg.alt = imgAlt;
+                lightbox.classList.add('active');
+                lightbox.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden'; // Stop background scrolling
+            };
+
+            const closeLightbox = () => {
+                lightbox.classList.remove('active');
+                lightbox.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = ''; // Restore scrolling
+                // Clear source after fade out completes
+                setTimeout(() => { 
+                    if(!lightbox.classList.contains('active')) {
+                        lightboxImg.src = ''; 
+                    }
+                }, 300); 
+            };
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const img = item.querySelector('img');
+                    if (img) {
+                        openLightbox(img.src, img.alt);
+                    }
+                });
+            });
+
+            lightboxClose.addEventListener('click', closeLightbox);
+            
+            // Close when clicking the dark background
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            // Close on Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                    closeLightbox();
+                }
+            });
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', () => {
+            setLanguage('en'); // Default to English
+            initLightbox();
+        });
+
+    </script>
+</body>
+</html>
